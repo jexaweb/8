@@ -2,6 +2,7 @@ const template = document.querySelector("template");
 const productlist = document.getElementById("product-list");
 const bilEl = document.getElementById("bil");
 function updateUI({ products }) {
+  productlist.innerHTML = "";
   products.forEach((product) => {
     const {
       id,
@@ -29,9 +30,11 @@ async function getData(url) {
   const data = await req.json();
   return data;
 }
+let counter = 30;
 bilEl.addEventListener("click", async () => {
-  const data = await getData("https://dummyjson.com/products?limit=30");
-  updateUI(data);
+  getData(`https://dummyjson.com/products?limit=${(counter += 30)}`)
+    .then((data) => updateUI(data))
+    .catch((error) => console.log(error));
 });
 
 getData("https://dummyjson.com/products")
