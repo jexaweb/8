@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
@@ -36,68 +38,57 @@
             <a class="text-2xl" href="https://6-dars-woad-six.vercel.app/"
               ><i class="fa-solid fa-user"></i
             ></a>
-            <div class="indicator pl-5">
-              <span
-                class="indicator-item badge badge-secondary"
-                id="products-amount"
-                >0</span
-              >
-              <button class="btn">
-                <i class="fa-solid fa-cart-shopping mr-2"></i>
-              </button>
-            </div>
           </div>
         </div>
       </div>
     </header>
-
-    <main>
+    <main class="bg-emerald-200">
       <section>
-        <div class="align-elements">
-          <h2 class="text-3xl my-10">Product:</h2>
-          <ul
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
-            id="product-list"
-          >
-            <template>
-              <a href="./about.html">
-                <li>
-                  <div class="card bg-base-100 w-full shadow-sm">
-                    <figure>
-                      <img
-                        class="product-img"
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes"
-                      />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title line-clamp-1">Card Title</h2>
-                      <p class="decoration line-clamp-2">
-                        A card component has a figure, a body part, and inside
-                        body there are title and actions parts
-                      </p>
-
-                      <div class="card-actions justify-end">
-                        <h2 class="price"></h2>
-                        <button class="btn btn-primary buy-button">
-                          Buy Now
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </li></a
+        <div class="align-elements flex">
+          <div class="pb-10 pt-10">
+            <h2 class="text-3xl title"></h2>
+            <figure class="flex">
+              <img class="product-img w-130" src="" alt="" />
+              <img class="product-img w-130" src="" alt="" />
+            </figure>
+            <p class="decoration line-clamp-5 w-100"></p>
+          </div>
+          <div class="card bg-base-100 w-200 shadow-sm pl-10">
+            <h2 class="text-6xl price pt-10"></h2>
+            <a href=""><p class="pt-1">Arzon narx kafolati</p></a>
+            <div class="mt-2">
+              <button class="btn btn-outline btn-secondary">
+                1 klikda xarid qilish
+              </button>
+              <button class="cds text-2xl">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="flex gap-3 mt-5">
+              <span
+                class="bg-red-100 text-red-600 px-2 py-1 rounded text-xs font-medium"
+                >20% chegirma</span
               >
-            </template>
-          </ul>
-        </div>
-        <!-- <div class="flex justify-center">
-          <button class=" ">Show More</button>
-        </div>
-        
-        -->
-
-        <div class="p-6 flex justify-center align-elements mt-5">
-          <button class="btn btn-block" id="bil">Show More</button>
+              <div class="flex gap-1">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <i class="fa-regular fa-star text-gray-400"></i>
+              </div>
+            </div>
+            <button class="btn btn-primary mt-5 w-100">
+              <i class="fa-solid fa-cart-shopping mr-2"></i>Buy Now
+            </button>
+            <a href=""
+              ><i class="fa-solid fa-check mt-5 pr-0.9"></i>Bu haftada 37 kishi
+              sotib oldi
+            </a>
+            <a href=""
+              ><i class="fa-solid fa-boxes-packing mt-5 pr-0.5"></i> Bu haftada
+              37 kishi sotib oldi
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -106,7 +97,7 @@
     >
       <nav class="grid grid-flow-col gap-4">
         <a class="link link-hover" href="./about.html">About</a>
-        <a class="link link-hover">Contact</a>
+        <a class="link link-hover" href="./index.html">Home</a>
         <a class="link link-hover">Jobs</a>
         <a class="link link-hover">Press kit</a>
       </nav>
@@ -160,10 +151,6 @@
         </p>
       </aside>
     </footer>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/toastify-js"
-    ></script>
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./about.js"></script>
   </body>
 </html>
