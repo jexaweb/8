@@ -1599,8 +1599,17 @@
   .btn-block {
     width: 100%;
   }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
   .w-20 {
     width: calc(var(--spacing) * 20);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
   }
   .w-80 {
     width: calc(var(--spacing) * 80);
@@ -1702,6 +1711,11 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .rounded {
     border-radius: 0.25rem;
