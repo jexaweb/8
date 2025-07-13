@@ -8,12 +8,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "daisyui": "^5.0.46"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jexaweb/8.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jexaweb/8/issues"
+  },
+  "homepage": "https://github.com/jexaweb/8#readme",
+  "description": ""
 }

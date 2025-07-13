@@ -1,13 +1,18 @@
-let products = [];
+let products = localStorage.getItem("products")
+  ? JSON.parse(localStorage.getItem("products"))
+  : [];
 const pre = document.getElementById("products-amount");
 
-const cheangeBasket = () => {
+export const cheangeBasket = (products) => {
   let amount = 0;
-  amount = products.forEach((product) => {
+  products.forEach((product) => {
     amount += product.amount;
   });
   pre.textContent = amount;
 };
+if (products) {
+  cheangeBasket(products);
+}
 
 export const addProduct = (p) => {
   let isAdded = products.find((product) => product.id == p.id);
@@ -25,7 +30,8 @@ export const addProduct = (p) => {
       },
     }).showToast();
     products.push({ ...p, amount: 1 });
-    cheangeBasket();
   }
-  console.log(products);
+
+  localStorage.setItem("products", JSON.stringify(products));
+  cheangeBasket(products);
 };

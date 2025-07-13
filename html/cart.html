@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en " data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>cart</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <header class="bg-base-300">
+      <div class="align-elements">
+        <div class="navbar">
+          <div class="navbar-start">
+            <img src="../img/logo_coupang.png" alt="" width="100" height="50" />
+          </div>
+          <div class="navbar-center">
+            <ul class="menu menu-horizontal gap-5">
+              <li><a class="btn btn-soft" href="../index.html"> Home</a></li>
+              <li><a class="btn btn-soft" href="">About</a></li>
+              <li><a class="btn btn-soft" href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="text-2xl" href="https://6-dars-woad-six.vercel.app/"
+              ><i class="fa-solid fa-user"></i
+            ></a>
+            <div class="indicator pl-5">
+              <span
+                class="indicator-item badge badge-secondary"
+                id="products-amount"
+                >0</span
+              >
+              <a href="#" class="btn">
+                <i class="fa-solid fa-cart-shopping mr-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="align-elements">
+          <h2 class="text-3xl my-10">Cart:</h2>
+          <ul id="cart-list" class="cart-list flex flex-col gap-5"></ul>
+          <template id="card-template">
+            <li class="card bg-base-200 shadow-sm mb-5 hover:shadow-lg">
+              <div class="flex justify-between items-center p-5">
+                <img
+                  class="w-20 h-20 rounded-2xl product-img"
+                  src="https://placehold.co/600x400"
+                  alt=""
+                />
+                <div>
+                  <h3 class="name items-center">Computer</h3>
+                  <h5 class="brand">Brand:Acer</h5>
+                </div>
+                <p class="price">price: 500$</p>
+
+                <div class="flex items-center gap-3">
+                  <button class="btn">+</button>
+                  <span class="text-1xl font-bold">0</span>
+                  <button class="btn">-</button>
+                </div>
+              </div>
+            </li>
+          </template>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../js/cart.js"></script>
+  </body>
+</html>

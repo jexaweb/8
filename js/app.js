@@ -1,5 +1,6 @@
 import getData from "./requst.js";
 import { updateUI } from "./updateUI.js";
+import "./search.js";
 
 const bilEl = document.getElementById("bil");
 

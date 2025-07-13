@@ -16,7 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./src/output.css" />
-    <title>Document</title>
+    <title>CoupangSHop</title>
   </head>
   <body>
     <header class="bg-base-300">
@@ -42,9 +42,9 @@
                 id="products-amount"
                 >0</span
               >
-              <button class="btn">
+              <a href="./html/cart.html" class="btn">
                 <i class="fa-solid fa-cart-shopping mr-2"></i>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -54,13 +54,30 @@
     <main>
       <section>
         <div class="align-elements">
-          <h2 class="text-3xl my-10">Product:</h2>
+          <div class="flex justify-between align-center">
+            <h2 class="text-3xl my-10">Product:</h2>
+            <div>
+              <fieldset>
+                <legend class="fieldset-legend">Mahsulot qidrish:</legend>
+                <div class="join">
+                  <input
+                    id="search-text"
+                    type="text"
+                    class="input join-item"
+                    placeholder="Product name"
+                  />
+                  <button class="btn join-item">save</button>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
           <ul
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
             id="product-list"
           >
             <template>
-              <a href="./about.html">
+              <a href="./html/about.html">
                 <li>
                   <div class="card bg-base-100 w-full shadow-sm">
                     <figure>
@@ -164,6 +181,6 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>

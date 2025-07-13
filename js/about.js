@@ -2,6 +2,7 @@ import getData from "./requst.js";
 // import { updateUIAboutUI } from "./updateUI.js";
 
 let id = new URLSearchParams(document.location.search).get("id");
+
 const title = document.querySelector(".title");
 const decoration = document.querySelector(".decoration");
 const productImg = document.querySelector(".product-img");
